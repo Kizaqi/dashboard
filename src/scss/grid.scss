@@ -24,12 +24,39 @@
 }
 
 @media (max-width: 991px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+  }
+
+  td {
+    border-bottom: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 768px) {
 }
 
 @media (max-width: 576px) {
+  .burger-menu_nav {
+    width: 60%;
+  }
 }
 
 @media (max-width: 320px) {
